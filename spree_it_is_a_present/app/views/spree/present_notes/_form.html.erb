@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-12 mb-4">
+		<div id="present_note">
+			<h5 class="text-uppercase checkout-content-header">
+
+				Mammad is Fucking DEAD
+			</h5>
+			<%= form.fields_for :present_note, order.present_note_with_default do |present_note_form| %>
+				<div class="inner checkout-content-inner" data-hook='present_note_inner'>
+					<div class="form-group checkout-content-inner-field has-float-label">
+						<%= present_note_form.label :recipient_name, class: "required spree-flat-input", placeholder: "BAH BAH" %>
+						<%= present_note_form.label :name, "soltan ghalbha", class :'text-uppercase' %>
+					</div>
+					<div class="form-group checkout-content-inner-field has-float-label">
+						<%= present_note_form.text_area :dedication, class: 'required spree-flat-input', placeholder: 'Dedicatoria' %>
+						<%= present_note_form.label :dedication, 'Dedicatoria', class: 'text-uppercase'%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
